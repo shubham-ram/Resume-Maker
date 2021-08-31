@@ -1,0 +1,110 @@
+<%- include("../partials/header-form")%>
+    
+    <div class="main-content d-flex flex-row">
+
+        <div class="side-bar py-4">
+          <a href="/contact-details">
+            <div class="d-flex align-items-baseline ps-4 py-3 my-2">
+                <i class="fas fa-address-card"></i>
+                <p class="ps-3">Contact Info</p>
+              </div>
+          </a>
+          <a href="/internship">
+            <div class="d-flex align-items-baseline ps-4 py-3 my-2 ">
+                <i class="fas fa-hammer"></i>
+                <p class="ps-3">Internship</p>
+            </div>
+          </a>
+          <a href="/education">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2">
+                <i class="fas fa-graduation-cap"></i>
+                <p class="ps-3">Education</p>
+            </div>
+          </a>
+          <a href="/skills">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2 background-color">
+                <i class="fas fa-magic"></i>
+                <p class="ps-3">Skills</p>
+            </div>
+          </a>
+          <a href="objective">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2 ">
+                <i class="fas fa-bullseye"></i>
+                <p class="ps-3">Objective</p>
+            </div>
+          </a>
+         
+        </div>
+
+
+        <div class="main-form">
+            <div class="ps-5 main-form-content">
+                <h1 class="title">Skills</h1>
+
+                <div class="form mt-5">
+                    
+                    <form method="POST" action="/skills">
+
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div>
+                                <p class="label">Skill #1</p>
+                                <input name="skill1" class="input-field  input-width py-2  mb-4" type="text" required>
+                            </div>
+                            <div>
+                                <p class="label">Skill #2</p>
+                                <input name="skill2" class="input-field  input-width py-2  mb-4" type="text" required>
+                            </div>
+                            <div>
+                                <p class="label">Skill #3</p>
+                                <input name="skill3" class="input-field  input-width py-2  mb-4" type="text" required>
+                            </div>
+                            <div id="4" class="more-skill">
+                                <p class="label">Skill #4</p>
+                                <input name="skill4" class="input-field  input-width py-2  mb-4" type="text">
+                            </div>
+                            <div id="5" class="more-skill">
+                                <p class="label">Skill #5</p>
+                                <input name="skill5" class="input-field  input-width py-2  mb-4" type="text">
+                            </div>
+                            <div id="6" class="more-skill">
+                                <p class="label">Skill #6</p>
+                                <input name="skill6" class="input-field  input-width py-2  mb-4" type="text">
+                            </div>
+                            <div id="7" class="more-skill">
+                                <p class="label">Skill #7</p>
+                                <input name="skill7" class="input-field  input-width py-2  mb-4" type="text">
+                            </div>
+                            <div id="8" class="more-skill">
+                                <p class="label">Skill #8</p>
+                                <input name="skill8" class="input-field  input-width py-2  mb-4" type="text">
+                            </div>
+                            <div id="9" class="more-skill">
+                                <p class="label">Skill #9</p>
+                                <input name="skill9" class="input-field  input-width py-2  mb-4" type="text">
+                            </div>
+                            <div id="10" class="more-skill">
+                                <p class="label">Skill #10</p>
+                                <input name="skill10" class="input-field  input-width py-2  mb-4" type="text">
+                            </div>
+                        </div>
+                        
+
+                        <div id="add-skill" class="add-more" onclick="addSkill()">
+                            <p><i class="fas fa-plus me-1"></i> Add one more</p>
+                        </div>
+
+                        <div class="cta d-flex justify-content-center my-5">
+                            <a href="/education" class="me-3 btn btn-lg back px-4"> Back</a>
+                            <button class=" ms-4 px-4 btn btn-lg text-light continue" type="submit">Continue</button>    
+                        </div>
+
+                    </form>
+                </div>
+                
+            </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="js/form.js"></script>
+</body>
+</html>

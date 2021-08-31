@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Work+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ebeef4;
+    /* background-color: #bcbcbc; */
+}
+
+.nav-bar{
+    background-color: #F3F5FA;
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 10rem;
+    border-bottom: 1px solid #b9b9b9;
+}
+.headerName h2{
+    font-size: 1.8rem;
+    margin: 0!important;
+    font-family: 'Rubik', sans-serif;
+}
+.headerName h2 a{color: black !important; text-decoration: none !important;}
+
+.resume{
+    display: block;
+    margin: 20px auto;
+    background-color: white;
+    width:780px;
+    height: fit-content;
+}
+.title{
+    text-transform: uppercase;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid;
+    letter-spacing: 1px;
+}
+.desc{
+    font-size: 0.85rem;font-family: 'Work Sans', sans-serif;
+}
+.header-name{
+    background-color: #F5F5F5;
+    color:#333;
+    text-align: center;
+}
+.header-name h1, .header-name p {
+    letter-spacing: 3px;
+    font-family: 'Arimo', sans-serif;
+}
+.header-name hr {
+    height: 0;
+    width: 180px;
+    display: block;
+    margin: 20px auto;
+    border-top: 2px solid black;
+    opacity: 0.45;
+}
+.header-name p{
+    opacity: 0.7;
+    font-size: 1.22rem;
+    letter-spacing: 5px;
+}
+
+.body{
+    flex-direction: row-reverse;
+}
+.main-section{
+    margin-top: 2.5rem;
+}
+.internship{margin-bottom: 2.5rem;}
+.internship-position{
+    justify-content: space-between;
+}
+.f-bold{font-weight: 600; margin-bottom: 8px;}
+.internship-position p{
+    margin: 0 !important;
+}
+.date{
+    color: grey;font-size: 0.85rem;
+}
+table{
+    width: 100%;
+    padding-top: 0.8rem;
+}
+td{
+    font-size: 0.8rem !important;
+    padding: 5px;
+}
+td::before{
+    content: "•";
+    padding: 5px 10px;
+}
+.side-section{
+    background-color: #253847;
+    color: #ffe1ca;
+    width: 480px;
+    padding-top: 2.5rem;
+    margin-right: 2rem;
+}
+.side-desc{font-size: 0.8rem;color: #fff;font-family: 'Work Sans', sans-serif;}
+.fas, .fab{color:#F5F5F5}
+.side-padding{padding: 0 2.5rem;}
+.contact div{
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.contact div p{word-break: break-all;}
+
+.edu-details p{
+    margin: 0;
+}
+
+.skill ul li{
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+}
+
+.download{
+    background-color: #2dc08d ;color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.download:hover{background-color: #23976F; color: #fff;}

@@ -1,0 +1,122 @@
+<%- include("../partials/header") %>
+
+    <link rel="stylesheet" href="css/style.temp1.css">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="headerName">
+            <h2><a href="/"> Resume Maker</a></h2>
+        </div>
+    </nav>
+
+    <div id="resume1" class="resume px-4">
+        <div class="header-name pt-5 pb-4  text-uppercase">
+            <h1><%= contactInfo[0]%> <%= contactInfo[1]%></h1>
+            <hr>
+            <p><%= obj[0]%></p>
+        </div>
+
+        <div class="body d-flex">
+
+            <div class="main-section">
+                <div class="me-4">
+        
+                    <div class="internship mb-5">
+                        <h2 class="title">Internship</h2>
+                        <div class="mt-2">
+
+                            <% internship.forEach(ele =>{ %>
+                                <div class="internship-details">
+                                    <div class="d-flex internship-position">
+                                       <p class="fw-bold"><%= ele.title%></p>
+                                       <p class="date"><%= ele.start%>- <%= ele.end%></p>
+                                    </div>
+                                    <p class="fst-italic f-bold date"><%= ele.name%></p>
+                                    <p class="internship-about desc">
+                                       <%= ele.desc%>
+                                    </p>
+                                </div>
+                            <% }) %>
+
+                        </div>
+                    </div>
+
+                    <div class="education mb-5">
+                        <h2 class="title">Education</h2>
+                        <div class="mb-2">
+
+                            <% edu.forEach(eduDetail =>{ %>
+                                <div class="edu-details desc my-3">
+                                    <p class="name fw-bold"><%= eduDetail.name%></p>
+                                    <p class="degree pt-1"><%= eduDetail.degree%>, <%= eduDetail.course%></p>
+
+                                    <table cellspacing="3">
+                                        <tr>
+                                            <td class="date pt-2">Year of completion: <%= eduDetail.complete%></td>
+                                            <td class="date pt-2">CGPA/Percentage: <%= eduDetail.marks%></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            <% }) %>
+
+                        </div>
+                    </div>
+
+                </div>
+              
+            </div>
+    
+            <div class="side-section pt-5">
+                <div class="side-padding">
+
+                    <div class="obj  mb-4 ">
+                        <h2 class="title">Objective</h2>
+                        <p class="py-2 side-desc"> <%= obj[1]%> </p>
+                    </div>
+
+                    <div class="contact mb-4">
+                        <h2 class="title">Contact</h2>
+                        <div class="my-2">
+                            <div class="d-flex">
+                                <i class="fas fa-phone-square-alt"></i>
+                                <p class="side-desc ps-2">+91 <%= contactInfo[3]%></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fas fa-envelope"></i>
+                                <p class="side-desc ps-2"><%= contactInfo[2]%> </p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fab fa-linkedin"></i>
+                                <p class="side-desc ps-2"><%= contactInfo[5]%></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="side-desc ps-2"><%= contactInfo[4]%></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div class="skill">
+                        <h2 class="title">Skills</h2>
+                        <div class="my-2">
+                            <ul>
+                                <% skills.forEach( skill =>{ %>
+                                    <li class="side-desc"> <%= skill%></li>
+                                <% }) %>
+                            </ul>
+                                
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+    </div>
+    <button class="my-5 mx-auto d-block btn btn-lg download" onclick="genPDF1()">Download Resume</button>
+    <script src="js/pdf.js"></script>
+</body>
+</html>

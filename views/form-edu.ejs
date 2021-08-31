@@ -1,0 +1,173 @@
+<%- include("../partials/header-form")%>
+    
+    <div class="main-content d-flex flex-row">
+
+        <div class="side-bar py-4">
+          <a href="/contact-details">
+            <div class="d-flex align-items-baseline ps-4 py-3 my-2">
+                <i class="fas fa-address-card"></i>
+                <p class="ps-3">Contact Info</p>
+              </div>
+          </a>
+          <a href="/internship">
+            <div class="d-flex align-items-baseline ps-4 py-3 my-2">
+                <i class="fas fa-hammer"></i>
+                <p class="ps-3">Internship</p>
+            </div>
+          </a>
+          <a href="/education">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2 background-color">
+                <i class="fas fa-graduation-cap"></i>
+                <p class="ps-3">Education</p>
+            </div>
+          </a>
+          <a href="/skills">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2">
+                <i class="fas fa-magic"></i>
+                <p class="ps-3">Skills</p>
+            </div>
+          </a>
+          <a href="/objective">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2">
+                <i class="fas fa-bullseye"></i>
+                <p class="ps-3">Objective</p>
+            </div>
+          </a>
+         
+        </div>
+
+
+        <div class="main-form">
+            <div class="ps-5 main-form-content">
+                <h1 class="title">Education Details</h1>
+
+                <div class="form" style="margin-top: 2.5rem;">
+                    
+                    <form method="POST" action="/education">
+
+                        <div class="university">
+                            <h3 class="edu-title py-2 ps-3 mb-4">University Details</h3>
+                            <p class="label">College Name</p>
+                            <input name="uniName" class="input-field py-2 w-100 mb-4" type="text" required>
+    
+                            <div class="d-flex justify-content-between mb-4">
+                                <div>
+                                    <p class="label">Degree/ Program</p>
+                                    <input name="degree" class="input-field input-width py-2  mb-4" list="uni-degree" required>
+                                    <datalist id="uni-degree">
+                                        <option value="B.E">
+                                        <option value="B.Sc">
+                                        <option value="BCA">
+                                        <option value="B.Arch">
+                                        <option value="B.Com">
+                                        <option value="BMS">
+                                    </datalist>
+                                </div>
+                                <div>
+                                    <p class="label">Field of Study</p>
+                                    <input name="course" class="input-field input-width py-2  mb-4" type="text" required>
+                                </div>
+                            </div>
+    
+                            <div class="d-flex justify-content-start mb-4">
+                                <div class="city me-5">
+                                    <p class="label">Year of Completion</p>
+                                    <input name="YOE1" class="input-field .input-width py-2 " type="number" required>
+                                </div>
+                                <div class="state ms-5">
+                                    <div class="d-flex align-items-baseline">
+                                        <p class="label me-2">CGPA</p>
+                                        <i class="far fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="right" title="(SGPAs of All semesters in an academic year)/Number of semesters"></i>
+                                    </div>
+                                    <input name="CGPA" class="input-field .input-width py-2" type="number" step="any" required>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="college" style="margin-top: 5rem;">
+                            <h3 class="edu-title py-2 ps-3 mb-4">College Details</h3>
+                            <p class="label">College Name</p>
+                            <input name="collegeName" class="input-field py-2 w-100 mb-4" type="text" required>
+    
+                            <div class="d-flex justify-content-between mb-4">
+                                <div>
+                                    <p class="label">Board</p>
+                                    <input name="collegeDegree" class="input-field input-width py-2  mb-4" list="college-degree" required>
+                                    <datalist id="college-degree">
+                                        <option value="HSC">
+                                        <option value="CBSC">
+                                        <option value="ICSE">
+                                        <option value="ISC">
+                                    </datalist>
+                                </div>
+                                <div>
+                                    <p class="label">Stream</p>
+                                    <input name="stream" class="input-field input-width py-2  mb-4" list="stream" required>
+                                    <datalist id="stream">
+                                        <option value="Science">
+                                        <option value="Commerce">
+                                        <option value="Arts">
+                                    </datalist>
+                                </div>
+                            </div>
+    
+                            <div class="d-flex justify-content-start mb-4">
+                                <div class="city me-5">
+                                    <p class="label">Year of Completion</p>
+                                    <input name="YOE2" class="input-field .input-width py-2 " type="number" required>
+                                </div>
+                                <div class="state ms-5">
+                                    <p class="label me-2">Percentage</p>
+                                    <input name="collegePercentage" class="input-field .input-width py-2" type="number" step="any" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="college" style="margin-top: 5rem;">
+                            <h3 class="edu-title py-2 ps-3 mb-4">School Details</h3>
+                            <p class="label">School Name</p>
+                            <input name="schoolName" class="input-field py-2 w-100 mb-4" type="text" required>
+    
+                            
+                            <div>
+                            <p class="label">Board</p>
+                                <input name="board" class="input-field input-width py-2  mb-4" list="school-board" required>
+                                <datalist id="school-board">
+                                    <option value="SSC">
+                                    <option value="CBSC">
+                                    <option value="ICSE">
+                                    <option value="ISC">
+                                </datalist>
+                            </div>
+                                
+                            
+    
+                            <div class="d-flex justify-content-start mb-4">
+                                <div class="city me-5">
+                                    <p class="label">Year of Completion</p>
+                                    <input name="YOE3" class="input-field .input-width py-2 " type="number" required>
+                                </div> 
+                                <div class="state ms-5">
+                                    <p class="label me-2">Percentage</p>
+                                    <input name="schoolPercentage" class="input-field .input-width py-2" type="number" step="any" required>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="cta d-flex justify-content-center my-5">
+                            <a href="/internship" class="me-3 btn btn-lg back px-4"> Back</a>
+                            <button class=" ms-4 px-4 btn btn-lg text-light continue" type="submit">Continue</button>    
+                        </div>
+                    
+                    </form>
+                </div>
+                
+            </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="js/form.js"></script>
+    
+</body>
+</html>

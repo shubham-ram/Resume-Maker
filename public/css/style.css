@@ -1,0 +1,63 @@
+/* #F3F5FA
+Rubik, Arial, Helvetica, serif;
+"Crimson ProVariable", serif;
+"Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+body{
+    margin: 0;padding: 0;
+    background-color: #F3F5FA;
+}
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10rem;
+    border-bottom: 1px solid #b9b9b9;
+}
+.headerName h2{
+    font-size: 2rem;
+    margin: 0!important;
+    font-family: 'Rubik', sans-serif; color: black !important; text-decoration: none !important;
+}
+.cta a{
+    background-color: #2dc08d ;color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.cta a:hover{background-color: #23976F; color: #fff;}
+.main{
+    padding: 0 10rem;
+    justify-content: space-between;
+}
+.page-title{
+    padding-top: 2.5rem;
+    padding-right: 11rem;
+}
+.page-title h1{
+    font-size: 3.75rem !important;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+}
+.page-title .desc{
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin: 2rem 0;
+    margin-right: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.feature{
+    align-items: baseline;color: #757575;
+}
+.feature i{font-size: 1.4rem;color: #23976F;font-weight: 500;}
+.feature p{font-size: 1.2rem;}
+
+td{
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-img{padding-top: 4rem;}
+.page-img img{
+    filter: drop-shadow(2px 6px 7px #585858);
+    width: 30rem;
+}

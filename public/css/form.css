@@ -1,0 +1,113 @@
+/* poppins, sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;padding: 0;
+    background-color: #F9FBFA;
+}
+.nav-bar{
+    position: fixed;
+    background-color: #F9FBFA;
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 10rem;
+    border-bottom: 1px solid #b9b9b9;
+}
+.headerName h2{
+    font-size: 1.8rem;
+    margin: 0!important;
+    font-family: 'Rubik', sans-serif;
+}
+.headerName h2 a{color: black !important; text-decoration: none !important;}
+
+
+.side-bar{
+    position: fixed;
+    top: 4.7rem;
+    width: 335px;
+    height: 100%;
+    font-size: 1.3rem;
+    background-color: #fff;
+    line-height: 18px;
+    border-right: 2px solid #eee;
+    font-family: 'Poppins', sans-serif;
+}
+.side-bar a{color: #4a4a4a; text-decoration: none;}
+.side-bar div p{margin:0}
+.background-color{
+    background: #ebfaf3;
+    border-left: 4px solid #65c897;
+    font-weight: 600;
+}
+.background-color i {color: #65c897;}
+
+.main-form{
+    /* padding-top: 4.5rem; */
+    padding-left: 340px;
+}
+.main-form-content{
+    padding: 8.75rem 1.5rem 0;
+    width: 58.5rem;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #4a4a4a !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-field{
+    background-color: transparent;
+    border: 1px solid #ababab;
+    width: 15rem;
+    /* font-size: 1.2rem; */
+    padding-left: 0.8rem;
+}
+.input-width{width: 25rem;}
+
+.input-field:focus{
+    outline: none;
+    border: 2px solid #65c897;
+}
+.label{
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+sub{color: #979797;}
+.lastName{margin-left: 4rem;}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.continue{background-color:#2dc08d;}
+.continue:hover{background-color: #61DA99;}
+.back{border:2px solid #888; color: #888;}
+.back:hover{color: black; border:2px solid #000;}
+
+.company{
+    margin-top: 4.5rem;
+    display: none;
+}
+
+.add-more{
+    color: #4a4a4a;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.add-more:hover{
+    color: black;
+    opacity: 1;
+}
+
+.edu-title{
+    color: #495057;
+    background: #efefef;
+    border-left: 7px solid rgb(131, 131, 131);
+}
+.more-skill{display: none;}

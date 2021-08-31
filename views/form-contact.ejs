@@ -1,0 +1,94 @@
+<%- include("../partials/header-form")%>
+
+    <div class="main-content d-flex flex-row">
+
+        <div class="side-bar py-4">
+          <a href="/contact-details">
+            <div class="d-flex align-items-baseline ps-4 py-3 my-2 background-color">
+                <i class="fas fa-address-card"></i>
+                <p class="ps-3">Contact Info</p>
+              </div>
+          </a>
+          <a href="/internship">
+            <div class="d-flex align-items-baseline ps-4 py-3 my-2">
+                <i class="fas fa-hammer"></i>
+                <p class="ps-3">Internship</p>
+            </div>
+          </a>
+          <a href="/education">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2">
+                <i class="fas fa-graduation-cap"></i>
+                <p class="ps-3">Education</p>
+            </div>
+          </a>
+          <a href="/skills">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2">
+                <i class="fas fa-magic"></i>
+                <p class="ps-3">Skills</p>
+            </div>
+          </a>
+          <a href="/objective">
+            <div class="d-flex align-items-baseline  ps-4 py-3 my-2">
+                <i class="fas fa-bullseye"></i>
+                <p class="ps-3">Objective</p>
+            </div>
+          </a>
+         
+        </div>
+
+
+        <div class="main-form">
+            <div class="ps-5 main-form-content">
+                <h1 class="title">Contact Information</h1>
+
+                <div class="form mt-5">
+                    
+                    <form  method="POST" action="/contact-details">
+
+                        <div class="fullname d-flex mb-4">
+                            <div class="firstName">
+                                <p class="label">First Name</p>
+                                <input name ="firstName"class="input-field input-width py-2" type="text" required>
+                            </div>
+                            <div class="lastName">
+                                <p class="label">Last Name</p>
+                                <input name="lastName"class="input-field input-width py-2" type="text" required>
+                            </div>
+                        </div>
+                        
+                        <p class="label">Email</p>
+                        <input name="email" class="input-field py-2 w-100 mb-4" type="email" required>
+
+                        <p class="label">Phone Number</p>
+                        <input name="phoneNumber" class="input-field py-2 w-100 mb-4" type="number" required>
+
+                        <div class="location d-flex justify-content-between mb-4">
+                            <div class="city">
+                                <p class="label">City</p>
+                                <input name="city" class="input-field py-2" type="text" required>
+                            </div>
+                            <div class="state">
+                                <p class="label">State</p>
+                                <input class="input-field py-2" type="text" required>
+                            </div>
+                            <div class="zip-code">
+                                <p class="label">Zip Code</p>
+                                <input class="input-field py-2" type="number" required>
+                            </div>
+                        </div>
+
+                        <p class="label">LinkedIn URL</p>
+                        <input name="linkedin" class="input-field py-2 w-100 mb-4" type="URL" required>
+
+                        <button class="m-auto d-block mt-5 mb-5 px-4 btn btn-lg text-light continue" type="submit">Continue</button>
+                    </form>
+                </div>
+                
+            </div>
+      </div>
+    </div>
+    
+    
+
+</body>
+</html>

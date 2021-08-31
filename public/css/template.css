@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;padding: 0;
+    /* background-color: #F3F5FA; */
+    background-color: #F9FBFA;
+}
+.nav-bar{
+    background-color: #F9FBFA;
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 10rem;
+    border-bottom: 1px solid #b9b9b9;
+}
+.headerName h2{
+    font-size: 1.8rem;
+    margin: 0!important;
+    font-family: 'Rubik', sans-serif;
+}
+.headerName h2 a{color: black !important; text-decoration: none !important;}
+
+.margin-2{margin: 2rem;}
+
+.template-text{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #4a4a4a;
+}
+.template-text h2{
+    font-weight: 900;
+}
+
+.template-content{
+    padding: 0 4rem;
+}
+
+.template{
+    width: 19rem;
+    height: 31rem;
+}
+.template img{
+    width:18.3rem;
+    border: 2px solid #dbdbdb;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 6%);
+    transition: transform .5s; 
+}
+.template img:hover{transform: scale(1.7);}
+.select{background-color:#34c995;}
+.select:hover{background-color: #61DA99;}
